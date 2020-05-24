@@ -24,10 +24,11 @@
   margin-left: 78px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    margin: 0;
   }
 }
 
@@ -35,9 +36,130 @@
   list-style: none;
   width: 176px;
 
+  z-index: 1;
+
+  &--nutrients::before {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+    margin-left: -78px;
+
+    background: #68b738;
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--packing::before {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+    margin-left: -78px;
+
+    background: #68b738;
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--food::before {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+    margin-left: -78px;
+
+    background: #68b738;
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--changes::before {
+    content: "";
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+    margin-left: -78px;
+
+    background: #68b738;
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 180px;
     width: 240px;
+
+    &--nutrients::before,
+    &--packing::before,
+    &--food::before,
+    &--changes::before {
+      margin: 0;
+    }
+
+    &--nutrients::after {
+      content: "1";
+
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+
+      margin-left: 138px;
+      margin-top: -245px;
+      color: #f2f2f2;
+
+      z-index: -1;
+    }
+
+    &--packing::after {
+      content: "2";
+
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+
+      margin-left: 138px;
+      margin-top: -220px;
+      color: #f2f2f2;
+
+      z-index: -1;
+    }
+
+    &--food::after {
+      content: "3";
+
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+
+      margin-left: 138px;
+      margin-top: -220px;
+      color: #f2f2f2;
+
+      z-index: -1;
+    }
+
+    &--changes::after {
+      content: "4";
+
+      font-size: 281px;
+      line-height: 281px;
+      position: absolute;
+
+      margin-left: 138px;
+      margin-top: -245px;
+      color: #f2f2f2;
+
+      z-index: -1;
+    }
   }
 }
 
@@ -48,5 +170,8 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    z-index: 1;
+
+    margin-top: 117px;
   }
 }

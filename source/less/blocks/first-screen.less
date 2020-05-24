@@ -1,6 +1,7 @@
 .first-screen {
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position-x: center;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -65,4 +66,9 @@
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: -260px 90px;
+  }
 }

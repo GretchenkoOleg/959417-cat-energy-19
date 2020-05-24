@@ -17,13 +17,25 @@
 }
 
 .page-header__logo {
-  height: 39px;
+  min-height: 65px;
+  border: 1px solid @border-color;
 
   @media (min-width: @tablet-width) {
     padding-top: 24px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 53px;
+    border: none;
   }
+}
+
+.page-header__logo img {
+  width: 191px;
+  height: 39px;
+}
+
+.page-header__logo-image {
+  padding-top: 11px;
 }
