@@ -33,15 +33,96 @@
   padding-top: 39px;
   padding-left: 92px;
 
+  &--losing-weight::before {
+    content: "";
+
+    position: absolute;
+
+    width: 35px;
+    height: 49px;
+
+    margin-left: -60px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--mass-gain::before {
+    content: "";
+
+    position: absolute;
+
+    width: 67px;
+    height: 28px;
+
+    margin-left: -80px;
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 37px;
 
     padding-top: 81px;
     padding-left: 55px;
+
+    &--losing-weight::before {
+      content: "";
+
+      position: absolute;
+
+      width: 141px;
+      height: 194px;
+
+      margin-left: 430px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--mass-gain::before {
+      content: "";
+
+      position: absolute;
+
+      width: 268px;
+      height: 113px;
+
+      margin-left: 350px;
+      margin-top: 65px;
+      background-image: url("../../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 216px;
+
+    &--losing-weight::before {
+      content: "";
+
+      position: absolute;
+
+      width: 71px;
+      height: 97px;
+
+      margin-left: -153px;
+      margin-top: -40px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--mass-gain::before {
+      content: "";
+
+      position: absolute;
+
+      width: 134px;
+      height: 57px;
+
+      margin-left: -185px;
+      margin-top: -10px;
+      background-image: url("../../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -81,6 +162,19 @@
   margin-top: 44px;
   margin-left: 20px;
   padding-bottom: 22px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+    height: 12px;
+
+    margin-left: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
